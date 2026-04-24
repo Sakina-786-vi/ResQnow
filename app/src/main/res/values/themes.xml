@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HighwaySOS" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/red_alert</item>
+        <item name="colorPrimaryVariant">@color/red_bright</item>
+        <item name="colorOnPrimary">@color/white_primary</item>
+        <item name="colorSecondary">@color/accent_cyan</item>
+        <item name="colorOnSecondary">@color/bg_dark</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/white_primary</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/Widget.HighwaySOS.Toolbar</item>
+    </style>
+
+    <!-- Emergency Activity: full red -->
+    <style name="Theme.HighwaySOS.Emergency" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/red_bright</item>
+        <item name="android:colorBackground">@color/emergency_bg</item>
+        <item name="android:windowBackground">@color/emergency_bg</item>
+        <item name="android:statusBarColor">@color/emergency_bg</item>
+        <item name="android:navigationBarColor">@color/emergency_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Widget.HighwaySOS.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/bg_dark</item>
+        <item name="titleTextColor">@color/white_primary</item>
+    </style>
+
+    <!-- Alert Dialog -->
+    <style name="HighwaySOS.Dialog" parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="android:textColor">@color/white_primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/HighwaySOS.Dialog.Button</item>
+    </style>
+
+    <style name="HighwaySOS.Dialog.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/accent_cyan</item>
+    </style>
+
+    <!-- Splash screen (connects to your existing splash) -->
+    <style name="Theme.HighwaySOS.Splash" parent="Theme.SplashScreen">
+        <!-- Match activity_splash_screen.xml background -->
+        <item name="windowSplashScreenBackground">@color/splash_bg</item>
+        <!-- Use the same image you show in the splash activity layout -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_sos_tile</item>
+        <item name="postSplashScreenTheme">@style/Theme.HighwaySOS</item>
+    </style>
+
+</resources>

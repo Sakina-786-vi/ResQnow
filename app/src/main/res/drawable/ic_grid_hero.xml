@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+
+    <!-- Background circle -->
+    <path android:fillColor="#1A1D24"
+        android:pathData="M70,10 C36.86,10 10,36.86 10,70 C10,103.14 36.86,130 70,130 C103.14,130 130,103.14 130,70 C130,36.86 103.14,10 70,10 Z"/>
+
+    <!-- Highway vertical -->
+    <path android:fillColor="#2D3240"
+        android:pathData="M60,20 L80,20 L80,120 L60,120 Z"/>
+
+    <!-- Highway horizontal -->
+    <path android:fillColor="#2D3240"
+        android:pathData="M20,60 L120,60 L120,80 L20,80 Z"/>
+
+    <!-- Center lane markings vertical -->
+    <path android:fillColor="#FFD600" android:strokeWidth="0"
+        android:pathData="M69,22 L71,22 L71,38 L69,38 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M69,44 L71,44 L71,58 L69,58 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M69,82 L71,82 L71,96 L69,96 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M69,102 L71,102 L71,116 L69,116 Z"/>
+
+    <!-- Center lane markings horizontal -->
+    <path android:fillColor="#FFD600"
+        android:pathData="M22,69 L38,69 L38,71 L22,71 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M44,69 L58,69 L58,71 L44,71 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M82,69 L96,69 L96,71 L82,71 Z"/>
+    <path android:fillColor="#FFD600"
+        android:pathData="M102,69 L116,69 L116,71 L102,71 Z"/>
+
+    <!-- Grid cell highlight: top-left zone (active) -->
+    <path android:fillColor="#1500BCD4"
+        android:pathData="M20,20 L60,20 L60,60 L20,60 Z"/>
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="1.5"
+        android:pathData="M20,20 L60,20 L60,60 L20,60 Z"/>
+
+    <!-- Vehicle dots in grid cells -->
+    <!-- Top-right cell -->
+    <path android:fillColor="#00E676"
+        android:pathData="M95,35 C95,33.34 96.34,32 98,32 C99.66,32 101,33.34 101,35 C101,36.66 99.66,38 98,38 C96.34,38 95,36.66 95,35 Z"/>
+    <path android:fillColor="#00E676"
+        android:pathData="M88,42 C88,40.34 89.34,39 91,39 C92.66,39 94,40.34 94,42 C94,43.66 92.66,45 91,45 C89.34,45 88,43.66 88,42 Z"/>
+
+    <!-- Bottom-left cell -->
+    <path android:fillColor="#00E676"
+        android:pathData="M30,95 C30,93.34 31.34,92 33,92 C34.66,92 36,93.34 36,95 C36,96.66 34.66,98 33,98 C31.34,98 30,96.66 30,95 Z"/>
+
+    <!-- Top-left cell (cyan = monitored) -->
+    <path android:fillColor="#00BCD4"
+        android:pathData="M35,35 C35,33.34 36.34,32 38,32 C39.66,32 41,33.34 41,35 C41,36.66 39.66,38 38,38 C36.34,38 35,36.66 35,35 Z"/>
+    <path android:fillColor="#00BCD4"
+        android:pathData="M42,45 C42,43.34 43.34,42 45,42 C46.66,42 48,43.34 48,45 C48,46.66 46.66,48 45,48 C43.34,48 42,46.66 42,45 Z"/>
+    <path android:fillColor="#00BCD4"
+        android:pathData="M28,48 C28,46.34 29.34,45 31,45 C32.66,45 34,46.34 34,48 C34,49.66 32.66,51 31,51 C29.34,51 28,49.66 28,48 Z"/>
+
+    <!-- Vehicle count badge -->
+    <path android:fillColor="#D32F2F"
+        android:pathData="M105,18 C105,14.69 107.69,12 111,12 C114.31,12 117,14.69 117,18 C117,21.31 114.31,24 111,24 C107.69,24 105,21.31 105,18 Z"/>
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M108.5,18 L110,15 L112,15 L113.5,18 L112,21 L110,21 Z"
+        android:strokeColor="#FFFFFF" android:strokeWidth="0.5"/>
+</vector>

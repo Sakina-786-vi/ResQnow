@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ic_sos_hero.xml - Large SOS hero illustration for onboarding page 1 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#22D32F2F"
+        android:pathData="M70,10 C36.86,10 10,36.86 10,70 C10,103.14 36.86,130 70,130 C103.14,130 130,103.14 130,70 C130,36.86 103.14,10 70,10 Z"/>
+
+    <!-- Mid ring -->
+    <path
+        android:fillColor="#33D32F2F"
+        android:pathData="M70,25 C44.59,25 24,45.59 24,71 C24,96.41 44.59,117 70,117 C95.41,117 116,96.41 116,71 C116,45.59 95.41,25 70,25 Z"/>
+
+    <!-- Inner circle -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M70,40 C53.43,40 40,53.43 40,70 C40,86.57 53.43,100 70,100 C86.57,100 100,86.57 100,70 C100,53.43 86.57,40 70,40 Z"/>
+
+    <!-- SOS Text: S -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,60 L52,63 C52,64.1 52.9,65 54,65 L60,65 C61.1,65 62,65.9 62,67 L62,70 C62,71.1 61.1,72 60,72 L54,72 C52.9,72 52,72.9 52,74 L52,77 C52,78.1 52.9,79 54,79 L62,79 L62,76 L54,76 L54,74 L60,74 C62.2,74 64,72.2 64,70 L64,67 C64,64.8 62.2,63 60,63 L54,63 L54,60 L52,60 Z M52,60 L62,60 L62,62 L52,62 L52,60 Z"/>
+
+    <!-- O -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M67,60 C64.8,60 63,61.8 63,64 L63,76 C63,78.2 64.8,80 67,80 L73,80 C75.2,80 77,78.2 77,76 L77,64 C77,61.8 75.2,60 73,60 L67,60 Z M65,64 C65,62.9 65.9,62 67,62 L73,62 C74.1,62 75,62.9 75,64 L75,76 C75,77.1 74.1,78 73,78 L67,78 C65.9,78 65,77.1 65,76 L65,64 Z"/>
+
+    <!-- S -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M79,60 L79,63 C79,64.1 79.9,65 81,65 L87,65 C88.1,65 89,65.9 89,67 L89,70 C89,71.1 88.1,72 87,72 L81,72 C79.9,72 79,72.9 79,74 L79,77 C79,78.1 79.9,79 81,79 L89,79 L89,76 L81,76 L81,74 L87,74 C89.2,74 91,72.2 91,70 L91,67 C91,64.8 89.2,63 87,63 L81,63 L81,60 L79,60 Z M79,60 L89,60 L89,62 L79,62 L79,60 Z"/>
+</vector>

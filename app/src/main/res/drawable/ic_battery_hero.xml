@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+
+    <!-- Background circle -->
+    <path android:fillColor="#1A1D24"
+        android:pathData="M70,10 C36.86,10 10,36.86 10,70 C10,103.14 36.86,130 70,130 C103.14,130 130,103.14 130,70 C130,36.86 103.14,10 70,10 Z"/>
+
+    <!-- Battery body -->
+    <path android:fillColor="#2D3240"
+        android:pathData="M45,45 L45,95 L95,95 L95,45 Z"/>
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#7A8599"
+        android:strokeWidth="2"
+        android:pathData="M45,45 L95,45 L95,95 L45,95 Z"/>
+
+    <!-- Battery tip -->
+    <path android:fillColor="#7A8599"
+        android:pathData="M95,58 L100,58 L100,82 L95,82 Z"/>
+
+    <!-- Battery fill (1%) indicator -->
+    <path android:fillColor="#00E676"
+        android:pathData="M47,92 L93,92 L93,89 L47,89 Z"/>
+
+    <!-- 1% label -->
+    <path android:fillColor="#00E676"
+        android:pathData="M60,63 L62,55 L65,55 L65,80 L62,80 L62,58 L60,60 Z"/>
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#00E676"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M68,55 L68,80"/>
+    <path android:fillColor="#00E676"
+        android:pathData="M72,55 L80,55 L80,58 L72,58 L72,55 Z"/>
+    <path android:fillColor="#00E676"
+        android:pathData="M72,66 L80,66 L80,69 L72,69 Z"/>
+    <path android:fillColor="#00E676"
+        android:pathData="M72,77 L80,77 L80,80 L72,80 Z"/>
+
+    <!-- GPS satellite arcs around top-right -->
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M95,28 C100,32 103,38 103,45"/>
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M102,22 C110,28 115,38 115,50"/>
+    <path android:fillColor="@android:color/transparent"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M108,18 C119,26 126,38 126,53"/>
+
+    <!-- GPS dot -->
+    <path android:fillColor="#00BCD4"
+        android:pathData="M89,24 C89,21.79 90.79,20 93,20 C95.21,20 97,21.79 97,24 C97,26.21 95.21,28 93,28 C90.79,28 89,26.21 89,24 Z"/>
+
+    <!-- "30s" update interval label -->
+    <path android:fillColor="#7A8599"
+        android:pathData="M20,108 L120,108"
+        android:strokeColor="#2D3240"
+        android:strokeWidth="1"/>
+    <path android:fillColor="#7A8599"
+        android:pathData="M30,110 L30,126 L35,126 L35,119 L39,119 L39,126 L44,126 L44,110 L39,110 L39,116 L35,116 L35,110 Z"/>
+</vector>

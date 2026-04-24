@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emergency_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Top: SOS Icon + Countdown -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="24dp">
+
+        <!-- SOS Flash Icon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚨"
+            android:textSize="64sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS EMERGENCY"
+            android:textColor="@color/white_primary"
+            android:textSize="30sp"
+            android:letterSpacing="0.2"
+            android:textStyle="bold"
+            android:fontFamily="@font/rajdhani_bold"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Auto-dial countdown -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto-calling 112 in "
+                android:textColor="#CCFFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvCountdown"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/countdown_circle"
+                android:fontFamily="@font/rajdhani_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" seconds"
+                android:textColor="#CCFFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Location Display -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#33FFFFFF"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 YOUR LOCATION"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.15"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvEmergencyLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Locating..."
+                    android:textColor="@color/white_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rajdhani_bold"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvEmergencyGps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GPS coordinates loading..."
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvEmergencyMapsUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#88FFFFFF"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Nearest Hospital -->
+        <TextView
+            android:id="@+id/tvNearestHospitalEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 Finding nearest hospital..."
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:paddingVertical="8dp"/>
+    </LinearLayout>
+
+    <!-- Bottom: Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="32dp"
+        android:gravity="center_horizontal">
+
+        <!-- CALL 112 — big red button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCall112"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="📞  CALL 112 NOW"
+            android:textSize="18sp"
+            android:letterSpacing="0.08"
+            android:fontFamily="@font/rajdhani_bold"
+            app:backgroundTint="@color/white_primary"
+            android:textColor="@color/red_alert"
+            app:cornerRadius="18dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- SMS + Maps row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendSosEmail"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="📲 Send SOS SMS"
+                android:textSize="13sp"
+                android:fontFamily="@font/rajdhani_semibold"
+                app:backgroundTint="#33FFFFFF"
+                android:textColor="@color/white_primary"
+                app:cornerRadius="14dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenMaps"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="🗺️ Open Maps"
+                android:textSize="13sp"
+                android:fontFamily="@font/rajdhani_semibold"
+                app:backgroundTint="#33FFFFFF"
+                android:textColor="@color/white_primary"
+                app:cornerRadius="14dp"/>
+        </LinearLayout>
+
+        <!-- Cancel -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="✕  Cancel (no emergency)"
+            android:textSize="13sp"
+            android:fontFamily="@font/rajdhani_medium"
+            android:textColor="#88FFFFFF"
+            style="@style/Widget.Material3.Button.TextButton"
+            app:cornerRadius="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

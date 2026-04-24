@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="screen_padding_h">16dp</dimen>
+    <dimen name="screen_padding_v">12dp</dimen>
+    <dimen name="card_padding">18dp</dimen>
+    <dimen name="btn_height_primary">58dp</dimen>
+    <dimen name="btn_height_secondary">48dp</dimen>
+    <dimen name="section_label_size">10sp</dimen>
+    <dimen name="hero_text_size">22sp</dimen>
+    <dimen name="body_text_size">13sp</dimen>
+    <dimen name="caption_text_size">11sp</dimen>
+</resources>

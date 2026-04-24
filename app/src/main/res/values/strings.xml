@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ResQnow</string>
+    <string name="tile_label">ResQnow</string>
+    <string name="tile_subtitle_inactive">Tap to activate</string>
+    <string name="tile_subtitle_active">GPS Active · 1% battery</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_title_1">ResQnow</string>
+    <string name="onboard_sub_1">1-Tap Emergency Response</string>
+    <string name="onboard_desc_1">Swipe down, tap the tile. Your GPS is instantly shared with nearest hospitals and police — before you even speak.</string>
+
+    <string name="onboard_title_2">Rumor Killer</string>
+    <string name="onboard_sub_2">47 Phones Can\'t Be Wrong</string>
+    <string name="onboard_desc_2">Our 500m highway grid counts passing vehicles in real time. 47 cars through NH44 KM152? That bridge is NOT collapsed.</string>
+
+    <string name="onboard_title_3">Always On</string>
+    <string name="onboard_sub_3">Just 1% Battery. All Day.</string>
+    <string name="onboard_desc_3">GPS updates every 30 seconds. No camera. No ML. Pure GPS math — light enough to run all day on any Android phone.</string>
+
+    <!-- Emergency -->
+    <string name="emergency_sms_template">🚨 RESQNOW EMERGENCY\nLocation: %1$s KM %2$d\nGPS: %3$.6f, %4$.6f\nMaps: https://maps.google.com/?q=%3$.6f,%4$.6f\nTime: %5$s\nSent via ResQnow</string>
+
+    <!-- Notifications -->
+    <string name="notif_tracking_title">🛣️ ResQnow Active</string>
+    <string name="notif_tracking_body">GPS monitoring · 1%% battery · tap for emergency actions</string>
+    <string name="notif_action_call">📞 Call 112</string>
+    <string name="notif_action_sms">📲 SOS SMS</string>
+    <string name="notif_action_stop">⏹ Stop</string>
+
+    <!-- Permissions -->
+    <string name="perm_location_rationale">ResQnow needs precise location to identify your highway, KM marker, and send it to emergency services. Without this, the app cannot help you.</string>
+    <string name="perm_sms_rationale">SMS permission lets ResQnow automatically send your GPS location to nearest hospitals during an emergency — no typing needed.</string>
+    <string name="perm_call_rationale">Call permission enables one-tap 112 dialling from the notification, even from the lock screen.</string>
+</resources>

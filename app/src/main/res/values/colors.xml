@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Core Background ── -->
+    <color name="bg_dark">#0D0F14</color>
+    <color name="bg_dark2">#111318</color>
+    <color name="card_bg">#1A1D24</color>
+    <color name="card_highlight">#1E2330</color>
+    <color name="card_blue">#1A2744</color>
+    <color name="card_orange">#2D1A08</color>
+
+    <!-- ── Emergency Red ── -->
+    <color name="red_alert">#D32F2F</color>
+    <color name="red_bright">#FF1744</color>
+    <color name="red_dim">#331A1A</color>
+    <color name="emergency_bg">#B71C1C</color>
+
+    <!-- ── Status Colors ── -->
+    <color name="green_active">#00E676</color>
+    <color name="green_dim">#0D2B1A</color>
+    <color name="orange_warning">#FF9800</color>
+    <color name="yellow_caution">#FFD600</color>
+
+    <!-- ── Accents ── -->
+    <color name="accent_cyan">#00BCD4</color>
+    <color name="accent_blue">#2979FF</color>
+    <color name="accent_orange">#FF6D00</color>
+
+    <!-- ── Text ── -->
+    <color name="white_primary">#FFFFFF</color>
+    <color name="text_secondary">#7A8599</color>
+    <color name="text_hint">#3D4556</color>
+
+    <!-- ── UI Elements ── -->
+    <color name="divider">#1F2535</color>
+    <color name="ripple">#22FFFFFF</color>
+
+    <!-- ── Onboarding ── -->
+    <color name="onboard_red">#1A0505</color>
+    <color name="onboard_dark">#0D0F14</color>
+    <color name="onboard_dark2">#0F1119</color>
+
+    <!-- ── Splash / Launcher ── -->
+    <color name="splash_bg">#02275c</color>
+
+    <!-- ── Material Theme Required ── -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

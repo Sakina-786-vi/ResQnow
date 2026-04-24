@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="36dp"
+    android:background="@color/bg_dark">
+
+    <ImageView
+        android:id="@+id/iv_onboard_icon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_sos_hero"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_onboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highway SOS"
+        android:textColor="@color/white_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rajdhani_bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_onboard_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-Tap Emergency Response"
+        android:textColor="@color/accent_cyan"
+        android:textSize="15sp"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:gravity="center"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_onboard_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rajdhani_medium"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp" />
+
+</LinearLayout>
